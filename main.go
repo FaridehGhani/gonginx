@@ -8,9 +8,9 @@ import (
 
 func main() {
 	http.HandleFunc(
-		"/nginx",
+		"/",
 		func(w http.ResponseWriter, r *http.Request) {
-			fmt.Fprintf(w, "nginx loadbalancer")
+			fmt.Fprintf(w, "hii from nginx")
 		},
 	)
 
